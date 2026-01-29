@@ -1,0 +1,8 @@
+# default
+.DS_Store
+# .vocode
+.vscode
+# node_modules
+html/_build/node_modules
+# wp
+htdocs/wp/wp-content/uploads/*

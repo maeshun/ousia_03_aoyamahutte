@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.container{
+  position: relative;
+  padding-top: 350px;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+.main_box {
+  width:100%;
+  display:flex; 
+  flex-wrap: wrap;
+}
+
+.ph_box {
+  width: calc( (100% - 0.9%) / 4 );
+  margin: 0 0.3% 100px 0;
+
+}
+
+.ph_box:nth-child(4n) {
+    margin-right: 0;
+  }
+
+.ph img{
+  width: 100%;
+}
+
+.dammy {
+  position: absolute;
+  width: calc( (100% - 0.9%) / 4 );
+  margin: 0 0.3% 100px 0;
+}
+
+.dammy:nth-child(4n){
+    margin-right: 0;
+}
+
+.dammy img {
+  width: 100%;
+}
+
+/*.news_title {
+  position: relative;
+  text-align: right;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+  line-height: 2em;
+  padding: 10px 5px 0;
+  color: #9d9d9d;
+}*/
+
+.txt {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+  padding: 5px 5px 0;
+}
+
+.date {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  line-height: 2em;
+  padding: 0 5px;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+  .ph_box {
+    width: calc((100% - 0.6%) / 3 );
+    margin: 0 0.3% 100px 0;
+
+  }
+
+  .ph_box:nth-child(4n) {
+      margin-right: 0.3%;
+    }
+
+  .ph_box:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  .ph img{
+    width: 100%;
+  }
+
+  .dammy {
+    position: absolute;
+    width: calc((100% - 0.6%) / 3 );
+    margin: 0 0.3% 100px 0;
+  }
+
+  .dammy:nth-child(4n){
+      margin-right: 0.3%;
+  }
+
+  .dammy:nth-child(3n){
+      margin-right: 0;
+  }
+
+  .dammy img {
+    width: 100%;
+  }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+  .container{
+    padding-top: 200px;
+    display:flex; 
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .ph_box {
+    position: relative;
+    width: calc(100% / 1);
+    padding: 0% 0% 3% 0%;
+  }
+
+  .dammy {
+    position: absolute;
+    width: calc(100%);
+    margin: 0 0 100px 0;
+  }
+
+.ph_box:nth-child(1n) {
+    margin-right: 0;
+  }
+
+  .txt {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height: 2em;
+    padding: 5px 5px 0;
+  }
+
+  .date {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    line-height: 2em;
+    padding: 0 5px;
+  }  
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .container{
+    padding-top: 150px;
+    display:flex; 
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .ph_box {
+    position: relative;
+    width: calc(100% / 1);
+    padding: 0% 0% 0.1% 0%;
+  }
+
+}

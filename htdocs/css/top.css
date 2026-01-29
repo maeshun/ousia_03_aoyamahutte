@@ -1,0 +1,431 @@
+/* Reset CSS */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+
+body {
+    font-family:'Quattrocento Sans', sans-serif;
+	margin: 0;
+	background: url(../img/bg/bg000.png) 50% 0  #faf0e6 repeat fixed ;
+}
+
+#wrap {
+	background: url(../img/bg/bg00.png) 50% 0  #faf0e6 repeat fixed ;
+	display: none;
+}
+
+
+/* Selected Text */
+::selection {
+    background:#ffff94; /* Safari */
+}
+ 
+::-moz-selection {
+    background:#ffff94; /* Firefox */
+}
+
+
+/* menu */
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	z-index: 9;
+}
+#menu li a{
+	text-decoration:none;
+	color: #0098fc;
+}
+#menu li:hover{
+	text-decoration:line-through;
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu{
+	position:fixed;
+	bottom:30px;
+	left:44px;
+	height: 40px;
+	z-index: 12;
+	width: 100%;
+	font-size:15px;
+	font-weight:bold;
+    letter-spacing: 0.2em;
+	padding: 0;
+	margin:0;
+}
+
+.sns {
+	position:fixed;
+	right:30px;
+	bottom:25px;
+	z-index: 12;
+}
+.sns img {
+	padding: 0 8px 0 ;
+}
+.sns img a{
+	opacity: 0.6;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	font-weight: bold;
+	color: #0098fc;
+}
+
+#first {
+	background: #fdf5e6 50% 0 repeat fixed ;
+	z-index:10;
+	height: 1000px;
+}
+
+#second {
+    box-shadow: 0 0 50px rgba(192, 192, 192, 0.4);
+	height: auto;
+	padding: 80px 0 200px ;
+	background: url(../img/bg/bg01.png) 50% 0 repeat fixed ;
+	z-index:10;
+}
+
+#third {
+    box-shadow: 0 0 50px rgba(192, 192, 192, 0.4);
+	height: auto;
+	padding: 80px 0 200px ;
+	background: url(../img/bg/bg02.png) 50% 0 repeat fixed ;
+	z-index:10;
+}
+
+#fourth {
+    box-shadow: 0 0 50px rgba(192, 192, 192, 0.4);
+	height: auto;
+	padding: 80px 0 130px ;
+	background: url(../img/bg/bg03.png) 50% 0 repeat fixed ;
+	z-index:10;
+}
+
+#first h1 {
+	position: fixed;
+	top: 95px;
+	right: 100px;
+	text-align: right;
+}
+
+.moku-right {
+	position: fixed;
+	top: 600px;
+	right: 500px;
+	z-index: 2;
+}
+
+.moku-left {
+	position: fixed;
+	top: 150px;
+	left: 140px;
+	z-index: 2;
+}
+
+
+.mine-title {
+    position: relative;
+	width: 780px;
+	float: left;
+	z-index: 2;
+}
+
+.mine-title ul {
+	text-align: left; 
+}
+
+.mine-title ul li {
+	padding: 30px 0 0 70px;
+}
+
+.title {
+	float: left;
+}
+
+.title img {
+	margin:0 50px 20px 0;
+}
+
+.copy {
+	padding: 0 0 0 70px;
+	font-size: 0.7em;
+	font-weight: 300;
+    letter-spacing: 0.3em;
+}
+
+.yaji {
+	display:none;
+}
+
+.logo {
+	position: fixed;
+	top: 350px;
+	left: 28%;
+	z-index: 1;
+}
+
+#second article {
+    width: 100%;
+	margin: 0px auto;
+}
+
+.co_title {
+    text-align: center;
+	top: 50px;
+	padding: 50px 50px 40px ;
+}
+
+#second article ul {
+	text-align: center; 
+}
+
+#second article ul li {
+	padding: 50px 50px 0;
+	vertical-align: top;
+	display: inline-block; 
+}
+
+.ab_title {
+	border-bottom: 5px solid #0098fc;
+	padding-bottom: 5px;
+	font-size: 20px;
+　  text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.text {
+	width: 400px;
+	padding: 20px 30px;
+	margin: 0 0 40px ;
+	font-size: 15px;
+    letter-spacing: 0.2em;
+	line-height: 3.0em;
+	text-align: justify; 
+    background-color: #fff;
+}
+
+.text a {
+	color: #0098fc;
+	text-decoration: underline;
+}
+
+.ab_title2 {
+	padding: 60px 0 0 ;
+	font-size: 15px;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.text02 {
+	padding: 10px 0 0 ;
+	font-size: 15px;
+	line-height: 2.5em;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+#third article {
+    width: 100%;
+	margin: 0px auto;
+}
+
+#third article ul {
+	text-align: center; 
+}
+
+#third article ul li {
+	padding: 50px 0 30px ;
+	vertical-align: top;
+	display: inline-block; 
+}
+
+#third article ul li p {
+	text-align: center; 
+}
+
+.map {
+	padding: 0 ;
+}
+
+.third_text {
+	font-size: 12px;
+	line-height: 2.2em;
+    letter-spacing: 0.2em;
+	padding: 80px 0 0 0;
+}
+
+.third_text a {
+	text-decoration: underline;
+    color: #0098fc;	
+}
+
+#fourth article {
+    max-width: 1000px;
+	margin: 0px auto;
+}
+
+.ph {
+    width: 400px ;
+	margin: 0 auto;
+}
+
+.fourth_text {
+	padding: 30px 0 0 ;
+	font-size: 16px;
+	line-height: 2.0em;
+    letter-spacing: 0.2em;
+	text-align: center;
+}
+
+.fourth_text a {
+    color: #0098fc;	
+}
+
+
+@media (max-width: 1500px) {
+	.moku-right {
+		display:none;
+	}
+}
+@media (max-width: 1200px) {
+	.moku-left {
+		display:none;
+	}
+}
+@media (max-width: 640px) {
+    #menu {
+		display:none;
+    }
+	.sns {
+		position: absolute;
+		margin-right: -100px; 
+		right: 50%;
+		bottom: 100px;
+		z-index: 12;
+	}
+	.content {
+		width: 100%;
+	}
+	#first article {
+		width: 100%;
+		padding: 100px 0 0 0;
+	}
+	#first h1 {
+		display:none;
+	}
+	.logo {
+		left: 23%;
+	}
+	.moku-left {
+		display:none;
+	}
+	.mine-title {
+	    width: 100%;
+		margin: 0 auto;
+		padding: 45px 0 0 ;
+		left: 0px;
+		z-index: 2;
+	}
+	.mine-title ul {
+		text-align: center;
+	}
+	.mine-title ul li {
+		padding: 30px 0 0 50px;
+	}
+	.copy {
+		padding: 0;
+		font-size: 0.6em;
+		font-weight: 400;
+		text-align: center;
+	}
+	.yaji {
+		display:block;
+		padding: 50px 0 0 0;
+		text-align: center;
+	}
+	#second {
+	    box-shadow: none;
+	}
+	#third {
+	    box-shadow: none;
+	}
+	#fourth {
+	    box-shadow: none;
+		padding: 80px 0 200px;
+	}
+	.ab_title {
+		padding: 20px 0 0 !important;
+		font-size: 24px !important;
+		padding-bottom: 10px !important;
+	}
+	.text {
+		padding: 20px 40px !important;
+	}
+	.text a {
+		font-size: 17px !important;
+	    letter-spacing: 0.1em;
+	}
+	.ab_title2 {
+		font-size: 24px !important;
+	}
+	.text02 {
+		margin: 0 80px 0 !important;
+	}
+	.third_text {
+		font-size: 19px !important;
+	}
+	.fourth_text {
+		font-size: 17px !important;
+	}
+}
