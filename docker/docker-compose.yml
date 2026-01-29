@@ -1,0 +1,45 @@
+version: "1.1"
+services:
+  db:
+    volumes:
+      - ./mysql/initdb.d:/docker-entrypoint-initdb.d #初期処理のフォルダ。初回起動のみでおｋ
+      - ./mysql/db:/var/lib/mysql       #ここにデータ永続化するためのファイルが入る。
+    platform: linux/x86_64
+    image: mysql:5.6
+    container_name: aoyamahutte_mysql56       # コンテナ名を明示的に指定する
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password # rootユーザのパスワード
+      MYSQL_DATABASE: aoyamahutte_wp # WordPress用データベース名
+      MYSQL_USER: user  # WordPress用データベース接続ユーザ名
+      MYSQL_PASSWORD: password  # WordPress用データベース接続パスワード
+    ports:
+      - 33103:3306 # increment
+
+  web:
+    image: php:8.3.30-apache  # 最新版イメージ確認
+    container_name: aoyamahutte_web
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 10103:80 # increment
+    volumes:
+      - ../htdocs:/var/www/html
+    build: ./web
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      MEMORY_LIMIT: 128M
+      UPLOAD_LIMIT: 64M
+    container_name: aoyamahutte_phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 10203:80 # increment
+
