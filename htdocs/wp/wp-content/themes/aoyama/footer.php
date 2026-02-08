@@ -1,5 +1,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/assets/js/common.js"></script>
+<?php if( is_front_page() ): ?>
+<script src="/assets/js/news.js"></script>
+<?php endif; ?>
 <?php if( is_page('calendar') ): ?>
 <script src='/assets/js/calendar.js'></script>
 <script>
@@ -9,7 +12,7 @@
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
 
-     
+
 
       // locale: 'ja',
 
